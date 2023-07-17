@@ -1,0 +1,351 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+}
+
+main {
+    padding-top: 70px;
+}
+
+.header {
+    background: rgb(240, 240, 240);
+    box-shadow: 0px 3px 3px 0px rgba(72, 72, 72, 0.3);
+    height: 70px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    transition: transform .3s linear;
+}
+
+header.hide {
+    transform: translateY(-200px);
+}
+
+.header_container {
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+
+    main,
+    .footer_container {
+        padding-top: 72px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 308px;
+    }
+
+    .header_container {
+        width: 308px;
+        position: relative;
+    }
+
+    .menu,
+    .close {
+        border: none;
+        background: transparent;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .close {
+        display: none;
+        z-index: 6;
+        color: white;
+    }
+
+    .menu {
+        z-index: 5;
+    }
+
+    .for_phone {
+        width: 100%;
+        height: 100%;
+        background: rgba(72, 72, 72, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        opacity: 0;
+        transition: .2s;
+    }
+
+    .navigation_2 {
+        width: 100%;
+        background: rgb(72, 72, 72);
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .navigation_list_2 {
+        list-style: none;
+        display: none;
+        flex-direction: column;
+        width: 308px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navigation_item_2 {
+        margin: 8px 20px;
+    }
+
+    .navigation_item_2 a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    a.home {
+        display: block;
+        text-decoration: none;
+        color: rgb(72, 72, 72);
+        display: block;
+        position: absolute;
+        width: 30px;
+        text-align: center;
+        left: 20px;
+        top: 24px;
+        font-size: 18px;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    .navigation {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(72, 72, 72);
+        width: 100%;
+    }
+
+    .navigation_item {
+        margin: 8px 20px;
+    }
+
+    .navigation_item a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    .navigation_list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        width: 308px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vk_a {
+        justify-content: center;
+    }
+
+    .phones_footer {
+        margin-top: 18px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    main,
+    .footer_container {
+        padding-top: 72px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 752px;
+    }
+
+    .header_container {
+        width: 752px;
+    }
+
+    .navigation {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation_item a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    .navigation_list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+    }
+
+    .home {
+        display: none;
+    }
+
+    .for_phone,
+    .menu,
+    .close {
+        display: none;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .footer_container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 1201px) {
+
+    main,
+    .footer_container {
+        padding-top: 72px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 940px;
+    }
+
+    .header_container {
+        width: 940px;
+    }
+
+    .navigation {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation_item a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    .navigation_list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+    }
+
+    .for_phone,
+    .menu,
+    .close {
+        display: none;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .home {
+        display: none;
+    }
+
+    .footer_container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+
+footer {
+    background: rgb(72, 72, 72);
+    box-shadow: 3px 0px 3px 3px rgba(72, 72, 72, 0.3);
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 72px;
+}
+
+.footer_container {
+    display: flex;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.vk {
+    width: auto;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.vk_a {
+    display: flex;
+    align-items: center;
+}
+
+a.current,
+span {
+    color: #c60021;
+}
+
+.navigation_item:hover {
+    transform: scale(1.2);
+    background: rgba(198, 0, 33, 0.1);
+    box-shadow: 0px 0px 15px 10px rgba(198, 0, 33, 0.1);
+    border-radius: 10px;
+}
+
+.navigation_item {
+    transition: 0.5s;
+}
+
+.up {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 10px 10px 10px;
+    border-radius: 80px;
+    border: 1px solid #c60021;
+    color: #c60021;
+    background: white;
+    transition: 0.5s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.up:hover {
+    color: white;
+    background: #c60021;
+}

@@ -1,0 +1,134 @@
+@media screen and (max-width: 767px) {
+
+    a.back {
+        display: block;
+        text-decoration: none;
+        color: rgb(72, 72, 72);
+        display: block;
+        position: absolute;
+        width: 30px;
+        text-align: center;
+        left: 10px;
+        top: 24px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    a.home {
+        display: block;
+        text-decoration: none;
+        color: rgb(72, 72, 72);
+        display: block;
+        position: absolute;
+        width: 30px;
+        text-align: center;
+        left: 50px;
+        top: 24px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .card {
+        width: 100%;
+        align-items: end;
+    }
+
+    .name {
+        width: 50%;
+    }
+
+    .price {
+        width: 50%;
+        text-align: end;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    a.back,
+    .home {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .photo {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (min-width: 1201px) {
+
+    a.back,
+    .home {
+        display: none;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .photo {
+        justify-content: space-between;
+    }
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.price-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 2px dotted #000000;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+}
+
+.photo img {
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+}
+
+.photo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.photo>img:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.photo>img {
+    transition: 0.5s;
+}

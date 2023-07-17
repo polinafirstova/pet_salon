@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Зоосалон Онлайн-запись</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="../main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <button class="up">↑</button>
+  <header class="header">
+    <div class="header_container">
+      <a href="../index.html" class="home">Главная</a>
+      <nav class="navigation">
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <a href="../index.html">Главная</a>
+          </li>
+          <li class="navigation_item">
+            <a href="../service_page/index.html">Услуги</a>
+          </li>
+          <li class="navigation_item">
+            <a href="index.html" class="current">Онлайн-запись</a>
+          </li>
+          <li class="navigation_item">
+            <a href="../contact_information_page/index.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu">☰</button>
+      <button class="close">✕</button>
+      <div class="for_phone">
+        <nav class="navigation_2">
+          <ul class="navigation_list_2">
+            <li class="navigation_item_2"><a href="../index.html" class="link">Главная</a></li>
+            <li class="navigation_item_2">
+              <a href="../service_page/index.html" class="link">Услуги</a>
+            </li>
+            <li class="navigation_item_2">
+              <a href="../online_appointment/index.html" class="current" class="link">Онлайн-запись</a>
+            </li>
+            <li class="navigation_item_2">
+              <a href="../contact_information_page/index.html" class="link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="body">
+    <h1>Онлайн-запись</h1>
+    <p>Если вы хотите <span>записать вашего питомца в зоосалон</span> или у вас <span>возникли вопросы</span>,
+      отправляйте заявку, и с вами
+      свяжется <span>администратор</span>.</p>
+    <p><i><span>Заполните,
+          пожалуйста, все поля.</span></i></p>
+    <form id="form" name="form">
+      <label for="name" class="name">Введите ваше имя:</label>
+      <input type="text" placeholder="Имя" name="name" id="name" data-reg="^[А-ЯЁ][а-яё]*$" />
+      <label for="name" class="prompt">Используйте только русские буквы</label>
+      <label for="phone" class="name">Введите ваш номер телефона:</label>
+      <input type="text" name="phone" id="phone"
+        data-reg="^((\+7)[\s(]*([0-9]){3}[)\s]*([0-9]){3}[-]([0-9]){2}[-]([0-9]){2})$" />
+      <label for="phone" class="prompt">Используйте только актуальный номер</label>
+      <label for="comment" class="name">Введите ваш комментарий:</label>
+      <textarea placeholder="Комментарий" name="comment" id="comment"></textarea>
+      <label for="comment" class="prompt">Опишите ваш запрос</label>
+      <div class="buttons">
+        <input type="submit" class="button" id="button" name="button" value="Отправить">
+        <input type="reset" class="button" value="Очистить">
+      </div>
+      <div class="window">
+        <div class="window_container">
+          <span class="close_window">✕</span>
+          <p class="greetings">Здравствуйте!</p>
+          <p>Спасибо, что выбрали нас. В ближайшее время с вами свяжется администратор.</p>
+          <button class="ok">Ok</button>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div class="footer_container">
+      <div class="shedule_footer">
+        <a href="../contact_information_page/index.html">
+          <h2>График работы</h2>
+        </a>
+        <a href="../contact_information_page/index.html">
+          <p>Понедельник-воскресенье 10:00-20:00</p>
+        </a>
+        <a href="https://vk.com/malteze_tomsk" class="vk_a"><img src="вк.png" class="vk" />ВКОНТАКТЕ</a>
+      </div>
+      <div class="phones_footer">
+        <a href="../contact_information_page/index.html">
+          <h2>Контакты</h2>
+        </a>
+        <a href="../contact_information_page/index.html">
+          <p>+7 (3822) 94-08-48</p>
+        </a>
+        <a href="../contact_information_page/index.html">
+          <p>+7 (953) 910-72-71</p>
+        </a>
+        <a href="../contact_information_page/index.html">
+          <p>+7 (952) 179-07-21</p>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="index.js"></script>
+  <script src="../header.js"></script>
+  <script src="../up.js"></script>
+</body>
+
+</html>
