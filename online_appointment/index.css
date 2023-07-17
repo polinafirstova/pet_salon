@@ -93,6 +93,8 @@ textarea {
 
 .window {
     position: fixed;
+    display: flex;
+    align-items: center;
     z-index: -1;
     left: 0;
     top: 0;
@@ -106,7 +108,7 @@ textarea {
 
 .window_container {
     background: white;
-    margin: 15% auto;
+    margin: auto;
     padding: 20px;
     border: 1px solid rgb(72, 72, 72);
     border-radius: 10px;
