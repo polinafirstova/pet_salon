@@ -26,7 +26,6 @@ button_close.addEventListener("click", closeMenu);
 function openMenu() {
     menu.classList.remove("hide");
     menu.style.opacity = "1";
-    menu.style.width = "100%";
     menu.style.height = "100%";
     menu.style.background = "rgba(72, 72, 72, 0.8)";
     button_menu.style.display = "none";
@@ -37,7 +36,6 @@ function openMenu() {
 
 function closeMenu() {
     menu.classList.add("hide");
-    menu.style.width = "0";
     menu.style.height = "0";
     menu.style.opacity = "0";
     button_close.style.display = "none";
@@ -49,7 +47,6 @@ function closeMenu() {
 window.onclick = function (event) {
     if (event.target === menu) {
         menu.classList.add("hide");
-        menu.style.width = "0";
         menu.style.height = "0";
         menu.style.opacity = "0";
         button_close.style.display = "none";
