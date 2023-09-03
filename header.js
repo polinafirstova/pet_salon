@@ -31,7 +31,6 @@ function openMenu() {
     button_menu.style.display = "none";
     button_close.style.display = "block";
     link.style.display = "flex";
-    home.style.display = "none";
 }
 
 function closeMenu() {
@@ -41,7 +40,6 @@ function closeMenu() {
     button_close.style.display = "none";
     button_menu.style.display = "block";
     link.style.display = "none";
-    home.style.display = "block";
 }
 
 window.onclick = function (event) {
@@ -52,9 +50,5 @@ window.onclick = function (event) {
         button_close.style.display = "none";
         button_menu.style.display = "block";
         link.style.display = "none";
-        home.style.display = "block";
     }
 }
-
-
-
